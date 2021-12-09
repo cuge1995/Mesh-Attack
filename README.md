@@ -22,6 +22,25 @@ was small in the point cloud space, but lead to very substantial “noise” in 
 * Visualization of the physical attack. Following Geoa3, the adversarial meshes are randomly selected from Table 1 in our [paper](https://arxiv.org/pdf/2104.12146.pdf). After 3D printing and scanning, the scanned points was used to attack Pointnet. A black tick indicates a successful attack.
 ![physical](figs/physical3.png)
 
+### Setup
+```
+#python env
+pip install -r requirements.txt
+
+#Mesh data
+Manfold40 can be downloaded via this link(https://cloud.tsinghua.edu.cn/f/2a292c598af94265a0b8/?dl=1).
+
+```
+
+### Run Mesh Attack
+```
+CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --master_port=29508 mesh_attack.py --model pointnet
+```
+
+### Acknowledgment
+* [SubdivNet](https://github.com/lzhengning/SubdivNet)
+* [IF-Defense](https://github.com/Wuziyi616/IF-Defense)
+* [PointCutMix](https://github.com/cuge1995/PointCutMix)
 
 ### Citation
 
@@ -36,9 +55,4 @@ if you find our work useful in your research, please consider citing:
 }
 ```
 
-
-
-
-### Code
-Code coming soon!
 
