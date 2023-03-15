@@ -47,11 +47,12 @@ CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --m
 if you find our work useful in your research, please consider citing:
 
 ```
-@article{zhang20213d,
+@article{zhang20233d,
   title={3d adversarial attacks beyond point cloud},
   author={Zhang, Jinlai and Chen, Lyujie and Liu, Binbin and Ouyang, Bo and Xie, Qizhi and Zhu, Jihong and Li, Weiming and Meng, Yanmei},
-  journal={arXiv preprint arXiv:2104.12146},
-  year={2021}
+  journal={Information Sciences},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
 
