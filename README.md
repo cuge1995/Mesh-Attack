@@ -28,7 +28,7 @@ was small in the point cloud space, but lead to very substantial “noise” in 
 pip install -r requirements.txt
 
 #Mesh data
-Manfold40 can be downloaded via this link(https://cloud.tsinghua.edu.cn/f/2a292c598af94265a0b8/?dl=1).
+Manfold40 can be downloaded via this link(https://cg.cs.tsinghua.edu.cn/dataset/subdivnet/datasets/Manifold40.zip).
 
 ```
 
